@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!-- Deklaruje, že dokument je v HTML5 formáte. -->
+<html lang="sk">
+<!-- Tag <html> definuje začiatok HTML dokumentu a určuje jazyk dokumentu (v tomto prípade slovenčina). -->
+<head>
+    <meta charset="UTF-8">
+    <!-- Tag <meta> určuje kódovanie znakov v dokumente, v tomto prípade UTF-8. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Atribút "viewport" zabezpečuje, že stránka je responzívna, prispôsobená veľkosti obrazovky na rôznych zariadeniach. -->
+    <title>Pokročilé HTML a CSS techniky</title>
+    <!-- Tag <title> definuje názov stránky, ktorý sa zobrazuje na karte prehliadača. -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Tag <link> prepojí externý CSS súbor (style.css) s týmto HTML dokumentom. -->
+</head>
+<body>
+    <!-- Tag <body> obsahuje všetok viditeľný obsah stránky. -->
+
+    <h1>Pokročilé HTML a CSS techniky</h1>
+    <!-- Tag <h1> vytvára najväčší nadpis, slúži na hlavný nadpis stránky. -->
+
+    <p>V tejto časti sa pozrieme na zložitejšie HTML a CSS koncepty.</p>
+    <!-- Tag <p> definuje odsek textu. -->
+
+    <h2>HTML Tabuľky</h2>
+    <!-- Tag <h2> vytvára nadpis druhej úrovne. -->
+
+    <p>Tabuľky sa používajú na zobrazenie štruktúrovaných dát. Napríklad:</p>
+    <!-- Tag <p> definuje odsek textu. -->
+
+    <table border="1">
+        <!-- Tag <table> vytvára HTML tabuľku, atribút "border" pridáva orámovanie bunkám. -->
+        <thead>
+            <!-- Tag <thead> definuje hlavičku tabuľky, obsahuje hlavičné bunky. -->
+            <tr>
+                <!-- Tag <tr> vytvára riadok v tabuľke. -->
+                <th>Meno</th>
+                <!-- Tag <th> definuje hlavičkovú bunku v tabuľke. -->
+                <th>Email</th>
+                <th>Telefón</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Tag <tbody> označuje telo tabuľky, kde sú uložené údaje. -->
+            <tr>
+                <td>Filip</td>
+                <!-- Tag <td> definuje bunku v tabuľke. -->
+                <td>filip@example.com</td>
+                <td>+421 123 456 789</td>
+            </tr>
+            <tr>
+                <td>Mária</td>
+                <td>maria@example.com</td>
+                <td>+421 987 654 321</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Iframe - Vloženie inej stránky</h2>
+    <p>Pomocou <code>&lt;iframe&gt;</code> môžeme vložiť obsah inej stránky:</p>
+    <iframe src="https://www.wikipedia.org" width="600" height="400" title="Iframe Example"></iframe>
+    <!-- Tag <iframe> vkladá do stránky obsah inej webstránky. Atribút "src" určuje URL stránky. -->
+
+    <h2>Formulár s rôznymi typmi polí</h2>
+    <!-- Ďalší nadpis druhej úrovne. -->
+    <form action="#" method="post">
+        <!-- Tag <form> vytvára HTML formulár. Atribút "action" určuje, kam sa údaje pošlú po odoslaní, "method" určuje spôsob odoslania. -->
+        <label for="meno">Meno:</label>
+        <!-- Tag <label> je označenie pre vstupné pole, atribút "for" sa viaže na id poľa. -->
+        <input type="text" id="meno" name="meno" placeholder="Zadaj svoje meno">
+        <!-- Tag <input> definuje vstupné pole, typ "text" je obyčajné textové pole. Atribút "placeholder" zobrazuje text pred vyplnením. -->
+        <br><br>
+
+        <label for="datum">Dátum narodenia:</label>
+        <input type="date" id="datum" name="datum">
+        <!-- Typ "date" umožňuje výber dátumu. -->
+
+        <br><br>
+        <label for="farba">Obľúbená farba:</label>
+        <input type="color" id="farba" name="farba">
+        <!-- Typ "color" umožňuje výber farby. -->
+
+        <br><br>
+        <label for="web">Tvoja webstránka:</label>
+        <input type="url" id="web" name="web" placeholder="..............">
+        <!-- Typ "url" určuje, že sa očakáva URL adresa. -->
+
+        <br><br>
+        <input type="submit" value="Odoslať">
+        <!-- Typ "submit" vytvára tlačidlo na odoslanie formulára. -->
+    </form>
+
+    <h2>Vloženie videa</h2>
+    <p>Tu je príklad vloženia videa pomocou tagu <code>&lt;video&gt;</code>:</p>
+    <video width="400" controls>
+        <!-- Tag <video> vkladá video, atribút "controls" pridáva ovládacie prvky na prehrávanie videa. -->
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        <!-- Tag <source> určuje zdroj videa a jeho typ (MIME type). -->
+        Tvoj prehliadač nepodporuje prehrávanie videa.
+        <!-- Text, ktorý sa zobrazí, ak prehliadač nepodporuje video. -->
+    </video>
+
+    <h2>Vloženie zvuku</h2>
+    <p>Podobne môžeme vložiť zvuk:</p>
+    <audio controls>
+        <!-- Tag <audio> vkladá zvukový súbor, atribút "controls" pridáva ovládacie prvky. -->
+        <source src="audio/01-kruta_margecany.mp3" type="audio/mp3">
+        <!-- Tag <source> určuje zdroj zvuku a jeho typ (MIME type). -->
+        Tvoj prehliadač nepodporuje prehrávanie zvuku.
+    </audio>
+
+    <h2>Flexbox - Zarovnanie elementov</h2>
+    <p>Flexbox umožňuje ľahšie vytvárať flexibilné rozloženie:</p>
+    <div class="flex-container">
+        <!-- Tag <div> je kontajnerový prvok, v tomto prípade slúži ako rodič pre flexbox rozloženie. -->
+        <div class="flex-item">Prvok 1</div>
+        <div class="flex-item">Prvok 2</div>
+        <div class="flex-item">Prvok 3</div>
+    </div>
+
+</body>
+</html>

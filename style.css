@@ -1,0 +1,94 @@
+/* Základné nastavenia pre telo stránky */
+body {
+    font-family: Arial, sans-serif; /* Nastavenie písma */
+    background-color: #f0f0f0; /* Svetlo šedá farba pozadia */
+    color: #333; /* Tmavo šedá farba textu */
+    margin: 0; /* Odstránenie predvolených okrajov */
+    padding: 20px; /* Pridanie vnútorného okraju */
+}
+
+/* Štýly pre nadpisy */
+h1 {
+    color: #4a90e2; /* Svetlo modrá farba pre hlavný nadpis */
+    text-align: center; /* Zarovnanie nadpisu na stred */
+}
+
+h2 {
+    color: #333; /* Tmavo šedá farba pre podnadpisy */
+    border-bottom: 2px solid #4a90e2; /* Podčiarknutie podnadpisu */
+    padding-bottom: 10px; /* Pridanie spodného okraju */
+}
+
+/* Štýly pre odseky */
+p {
+    line-height: 1.6; /* Zvýšenie medzery medzi riadkami */
+    margin: 10px 0; /* Vertikálne okraje odsekov */
+}
+
+/* Štýly pre zoznamy */
+ul {
+    list-style-type: none; /* Odstránenie bodiek zoznamu */
+    padding: 0; /* Odstránenie vnútorného okraju */
+}
+
+li {
+    background-color: #fff; /* Biele pozadie pre položky zoznamu */
+    border: 1px solid #ddd; /* Svetlo šedý okraj */
+    border-radius: 5px; /* Zaoblené rohy */
+    margin-bottom: 10px; /* Vertikálny okraj medzi položkami */
+    padding: 10px; /* Vnútorný okraj pre položky */
+}
+
+/* Odkazy */
+a {
+    color: #4a90e2; /* Svetlo modrá farba pre odkazy */
+    text-decoration: none; /* Odstránenie podčiarknutia */
+}
+
+a:hover {
+    text-decoration: underline; /* Podčiarknutie pri prechode myšou */
+}
+
+/* Obrázky */
+img {
+    display: block; /* Zobrazenie obrázka ako bloku */
+    margin: 20px auto; /* Zarovnanie obrázka na stred s vertikálnym okrajom */
+    max-width: 100%; /* Maximálna šírka obrázka */
+    height: auto; /* Automatické nastavenie výšky */
+}
+
+/* Kontaktná sekcia */
+.contact {
+    background-color: #e0e7ff; /* Svetlo modrá farba pozadia */
+    padding: 15px; /* Vnútorný okraj */
+    border-radius: 5px; /* Zaoblené rohy */
+}
+
+/* Flexbox rozloženie */
+.flex-container {
+    display: flex;
+    /* Nastavuje, že kontajner bude používať flexbox model rozloženia. */
+    justify-content: space-around;
+    /* Rozmiestni prvky rovnomerne po celej šírke kontajnera. */
+    background-color: #ddd;
+    /* Nastavuje svetlo šedé pozadie pre kontajner. */
+    padding: 20px;
+    /* Pridáva vnútorný okraj (padding) okolo obsahu. */
+}
+
+.flex-item {
+    background-color: #4A90E2;
+    /* Nastavuje modré pozadie pre každý prvok. */
+    padding: 20px;
+    /* Pridáva vnútorný okraj. */
+    margin: 10px;
+    /* Nastavuje vonkajší okraj medzi jednotlivými prvkami. */
+    color: white;
+    /* Nastavuje bielu farbu textu. */
+    border-radius: 5px;
+    /* Zaobľuje rohy každého prvku. */
+    width: 100px;
+    /* Nastavuje šírku prvkov na 100px. */
+    text-align: center;
+    /* Zarovnáva text do stredu prvku. */
+}

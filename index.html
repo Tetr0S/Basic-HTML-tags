@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!-- Deklaruje, že dokument je v HTML5 formáte. -->
+<html lang="sk">
+<!-- Tag <html> definuje začiatok HTML dokumentu a určuje jazyk dokumentu (v tomto prípade slovenčina). -->
+<head>
+    <meta charset="UTF-8">
+    <!-- Tag <meta> určuje kódovanie znakov v dokumente, v tomto prípade UTF-8. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Atribút "viewport" zabezpečuje, že stránka je responzívna, prispôsobená veľkosti obrazovky na rôznych zariadeniach. -->
+    <title>HTML a CSS Ukážka s Definíciami</title>
+    <!-- Tag <title> definuje názov stránky, ktorý sa zobrazuje na karte prehliadača. -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Tag <link> prepojí externý CSS súbor (style.css) s týmto HTML dokumentom. -->
+</head>
+<body>
+    <!-- Tag <body> obsahuje všetok viditeľný obsah stránky. -->
+
+    <h1>HTML a CSS Ukážka s Definíciami</h1>
+    <!-- Tag <h1> vytvára najväčší nadpis, slúži na hlavný nadpis stránky. -->
+
+    <p>Tento dokument ukazuje základné HTML tagy a obsahuje vysvetlenia ku každej téme.</p>
+    <!-- Tag <p> definuje odsek textu. -->
+
+    <h2>Zoznam HTML tém a vysvetlenia</h2>
+    <!-- Tag <h2> je druhá úroveň nadpisu, menší než <h1>, ale stále dosť výrazný. -->
+
+    <ul>
+        <!-- Tag <ul> vytvára nečíslovaný (bodkovaný) zoznam. -->
+        <li>
+            <strong>HTML tagy: nadpisy, odseky, zoznamy</strong>
+            <!-- Tag <li> definuje jednotlivú položku v zozname. -->
+            <p><em>&lt;h1&gt; až &lt;h6&gt;</em>: Tieto tagy slúžia na vytváranie nadpisov rôznej veľkosti. Číslo za 'h' určuje úroveň dôležitosti, kde <code>&lt;h1&gt;</code> je najdôležitejší.</p>
+            <p><em>&lt;p&gt;</em>: Používa sa na označenie odseku v HTML. Každý odsek je obalený týmto tagom.</p>
+            <p><em>&lt;ul&gt;</em> a <em>&lt;li&gt;</em>: Tag <code>&lt;ul&gt;</code> vytvára nečíslovaný zoznam, zatiaľ čo <code>&lt;li&gt;</code> označuje jednotlivé položky v zozname.</p>
+        </li>
+
+        <li>
+            <strong>Atribúty: href, src, alt</strong>
+            <p><em>href</em>: Atribút používaný v tagu <code>&lt;a&gt;</code>, ktorý špecifikuje cieľ odkazu (napr. URL alebo cesta k súboru).</p>
+            <p><em>src</em>: Atribút používaný v tagu <code>&lt;img&gt;</code> na určenie zdroja obrázka (jeho URL alebo cesta k nemu).</p>
+            <p><em>alt</em>: Tento atribút poskytuje alternatívny text pre obrázok, ak sa obrázok nezobrazí.</p>
+        </li>
+
+        <li>
+            <strong>HTML odkazy a obrázky</strong>
+            <p><em>&lt;a&gt;</em>: Tento tag vytvára odkaz na inú stránku alebo súbor. Atribút <code>href</code> určuje cieľ odkazu.</p>
+            <p><em>&lt;img&gt;</em>: Tento tag slúži na vkladanie obrázkov. Vyžaduje atribút <code>src</code>, ktorý určuje zdroj obrázka, a atribút <code>alt</code>, ktorý poskytuje alternatívny text.</p>
+        </li>
+
+        <li>
+            <strong>HTML formáty: nečíslovaný a číslovaný zoznam</strong>
+            <p><em>&lt;ul&gt;</em>: Nečíslovaný zoznam, kde položky nie sú očíslované, ale zobrazené ako bodky.</p>
+            <p><em>&lt;ol&gt;</em>: Číslovaný zoznam, kde každá položka má svoje poradové číslo.</p>
+        </li>
+
+        <li>
+            <strong>Struktúra dokumentu HTML</strong>
+            <p><em>&lt;html&gt;</em>: Tento tag označuje začiatok a koniec HTML dokumentu.</p>
+            <p><em>&lt;head&gt;</em>: Tento tag obsahuje meta informácie o stránke, ako je kódovanie, názov, a odkazy na CSS súbory.</p>
+            <p><em>&lt;body&gt;</em>: Obsahuje všetok viditeľný obsah na stránke.</p>
+        </li>
+    </ul>
+
+    <h2>Zoznam CSS tém a vysvetlenia</h2>
+    <!-- Ďalší nadpis druhej úrovne pre CSS témy. -->
+
+    <ul>
+        <li>
+            <strong>Výber elementov: tag, trieda, id</strong>
+            <p>V CSS môžeš vyberať elementy podľa tagov (napr. <code>p</code> pre odseky), podľa tried (napr. <code>.trieda</code>) alebo podľa identifikátorov (napr. <code>#id</code>).</p>
+        </li>
+
+        <li>
+            <strong>Farby: text a pozadie</strong>
+            <p>Farbu textu a pozadia môžeš nastaviť pomocou vlastností <code>color</code> (text) a <code>background-color</code> (pozadie) v CSS.</p>
+        </li>
+
+        <li>
+            <strong>Rozloženie a prispôsobenie (margin, padding)</strong>
+            <p>Vlastnosti <code>margin</code> a <code>padding</code> riadia rozostupy okolo a vo vnútri HTML elementov.</p>
+        </li>
+
+        <li>
+            <strong>Práca s fontami a veľkosťami textu</strong>
+            <p>Použi <code>font-family</code> na zmenu písma a <code>font-size</code> na nastavenie veľkosti textu.</p>
+        </li>
+
+        <li>
+            <strong>Responsívny dizajn pomocou media queries</strong>
+            <p>Media queries v CSS umožňujú prispôsobiť vzhľad stránky rôznym zariadeniam, napríklad mobilom a tabletom.</p>
+        </li>
+    </ul>
+
+    <h2>Odkazy</h2>
+    <p>Tu je príklad <a href="https://instagram.com">externého odkazu</a>, ktorý vás presmeruje na instagram.</p>
+    <!-- Tag <a> vytvára hypertextový odkaz, atribút href určuje URL cieľa. -->
+
+    <h2>Obrázky</h2>
+    <p>Vložili sme obrázok pomocou tagu <code>&lt;img&gt;</code>:</p>
+    <img src="images/nazorny obrazok.jpg" alt="Ukážkový obrázok">
+    <!-- Tag <img> vkladá obrázok, atribút src určuje cestu k obrázku, atribút alt poskytuje textový popis. -->
+     
+    <h2>Pre viac pokročilé témy klikni na odkaz:</h2>
+    <!-- Odkaz na podstránku -->
+    <p><a href="advanced.html">Pokročilé HTML a CSS techniky</a></p>
+
+    <h2>Kontakt</h2>
+    <p>Ak máš otázky, môžeš ma <a href="mailto:filip.glemba9@gmail.com">kontaktovať e-mailom</a>.</p>
+    <!-- Atribút mailto: v tagu <a> vytvára odkaz na otvorenie e-mailu. -->
+
+</body>
+</html>
